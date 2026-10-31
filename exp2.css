@@ -1,0 +1,119 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Home */
+.home {
+    background-color: #f2e6ff;
+    padding: 60px;
+}
+
+/* Products using Flexbox */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Product Cards */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px gray;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4c087d;
+}
+
+/* Account */
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
